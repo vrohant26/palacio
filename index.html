@@ -1,0 +1,1527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18 Hiral Khushi - Palacio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-column min-h-screen">
+    <header
+      class="header fixed top-0 left-0 w-100 flex justify-between items-center px-6 py-4 z-50"
+    >
+      <div class="logo flex flex-column">
+        <h1
+          class="logo-title font-md fw-400 text-gold uppercase font-serif tracking-wide leading-tight"
+        >
+          18 HIRAL KHUSHI
+        </h1>
+        <p class="logo-subtitle text-white uppercase opacity-80">
+          PALACIO &middot; CARTER ROAD, BANDRA WEST
+        </p>
+      </div>
+      <nav class="nav flex gap-8 items-center">
+        <a
+          href="#"
+          class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >About</a
+        >
+        <a
+          href="#"
+          class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >AMENITIES</a
+        >
+        <a
+          href="#"
+          class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >GALLERY</a
+        >
+        <a
+          href="#"
+          class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >HERITAGE</a
+        >
+        <a
+          href="#"
+          class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >ENQUIRE</a
+        >
+      </nav>
+      <div class="header-action">
+        <a
+          href="#"
+          class="btn-primary font-sm uppercase text-white font-serif no-underline tracking-wide transition-colors"
+          >CALL NOW</a
+        >
+      </div>
+
+      <!-- Burger Menu (Visible < 1024px) -->
+      <button
+        id="open-mobile-menu"
+        class="burger-menu hidden justify-center items-center bg-transparent border-none cursor-pointer p-4 z-50 text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M4 17.27v-1h16v1zm0-4.77v-1h16v1zm0-4.77v-1h16v1z"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <section
+          class="hero relative flex items-end w-100 grow min-h-svh overflow-hidden"
+        >
+          <div class="hero-bg"></div>
+          <div
+            class="hero-content relative flex justify-between items-end w-100 pb-8 z-1"
+          >
+            <h2
+              class="hero-title font-3xl fw-400 text-white uppercase font-serif leading-none"
+            >
+              WELCOME TO A<br />HOME ABOVE<br />THE HORIZON
+            </h2>
+            <div class="hero-action flex flex-column items-end gap-4">
+              <div class="hero-btn-wrapper overflow-hidden flex justify-end w-100">
+                <a
+                  href="#"
+                  class="btn-secondary font-xs uppercase no-underline px-6 py-4 tracking-wide transition-all"
+                  >REQUEST PRIVATE VIEWING</a
+                >
+              </div>
+              <div class="hero-features-wrapper overflow-hidden w-100">
+                <div
+                  class="hero-features flex justify-around w-100 text-gold font-xs"
+                >
+                  <span class="flex items-center gap-1"
+                    >&#10003; Ready to move</span
+                  >
+                  <span class="flex items-center gap-1"
+                    >&#10003; Fully Furnished</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about-section"
+          class="relative w-100 flex flex-column py-120 px-24"
+        >
+          <div class="flex justify-between w-100 mb-10">
+            <!-- Left Column -->
+            <div class="flex flex-column justify-between w-30">
+              <div
+                class="animate-fade-up font-xl mb-4 font-serif italic text-red uppercase"
+              >
+                (ABOUT)
+              </div>
+              <h2
+                class="animate-split-up font-2xl font-serif fw-600 italic text-red uppercase leading-none tracking-wide"
+              >
+                A RESIDENCE<br />WITHOUT<br />COMPARISON
+              </h2>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="relative w-33 flex justify-center items-end">
+              <div class="w-100 relative overflow-hidden z-1 animate-clip-up">
+                <img
+                  src="Images/About%20Image.webp"
+                  alt="Building"
+                  class="w-100 block relative scale-110"
+                  data-parallax="true"
+                />
+              </div>
+              <div
+                class="animate-fade-up absolute p-4 bg-dark-red bottom-10p right-neg45p z-2"
+              >
+                <p class="text-gold font-xs bold fw-600 tracking-wide">
+                  RERA A51800003272
+                </p>
+                <p class="text-gold font-xs tracking-wide uppercase">
+                  KHUSHI WORLD DEVELOPERS
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="flex flex-column w-30 gap-6">
+              <p class="animate-fade-up font-sm text-red">
+                Palacio is a rare expression of luxury ownership on Carter Road,
+                a fully furnished 10 BHK building crafted exclusively for one
+                family.
+              </p>
+              <p class="animate-fade-up font-sm text-red">
+                Every floor, every amenity, and every experience belongs
+                entirely to you, creating a level of privacy and exclusivity
+                rarely found in Mumbai.
+              </p>
+
+              <div class="animate-fade-up">
+                <a
+                  href="#"
+                  id="open-specs"
+                  class="inline-block font-xs text-red no-underline px-6 py-4 rounded-full border-red transition-opacity hover-opacity-70"
+                  >VIEW ALL SPECIFICATIONS</a
+                >
+              </div>
+              <div class="animate-fade-up hide-on-desktop">
+                <a
+                  href="#"
+                  class="open-floor-plan-btn inline-block font-xs text-red no-underline px-6 py-4 rounded-full border-red transition-opacity hover-opacity-70"
+                  >VIEW FLOOR PLAN</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Stats Row -->
+          <div class="flex justify-between items-start w-100 mt-10 gap-8">
+            <div class="animate-fade-up flex flex-column gap-4 flex-1">
+              <div class="flex items-start text-red">
+                <span class="font-display leading-none lh-8">10</span>
+                <span class="font-xl font-serif italic ml-2">Floors</span>
+              </div>
+              <p class="font-sm text-red">
+                Thoughtfully designed spaces for <br />
+                living, entertaining, and wellness.
+              </p>
+            </div>
+
+            <div class="animate-fade-up flex flex-column gap-4 flex-1">
+              <div class="flex items-start text-red">
+                <span class="font-display leading-none lh-8">10</span>
+                <span class="font-xl font-serif italic ml-2">BHK</span>
+              </div>
+              <p class="font-sm text-red">
+                Private residence spanning <br />
+                an entire building.
+              </p>
+            </div>
+
+            <div class="animate-fade-up flex flex-column gap-4 flex-1">
+              <div class="flex items-start text-red">
+                <span class="font-display leading-none lh-8">1</span>
+                <span class="font-xl font-serif italic ml-2">Family</span>
+              </div>
+              <p class="font-sm text-red">
+                Designed for exclusive <br />
+                single-family ownership.
+              </p>
+            </div>
+
+            <div
+              class="animate-fade-up hide-on-mobile flex justify-center items-center"
+            >
+              <a
+                href="#"
+                class="open-floor-plan-btn flex justify-center items-center rounded-full text-red no-underline font-sm border-red transition-opacity hover-opacity-70 w-150px h-150px"
+              >
+                View Floor Plan
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Location Section -->
+        <section
+          id="location-section"
+          class="relative w-100 flex flex-column py-120 px-24 bg-body"
+        >
+          <!-- Top Border with Diamonds -->
+          <div
+            class="absolute top-0 flex items-center justify-between border-with-diamonds"
+            style="width: 70%; left: 15%; transform: translateY(-50%)"
+          >
+            <div
+              class="absolute w-100 h-1px bg-red left-0"
+              style="top: 50%; transform: translateY(-50%); opacity: 0.3"
+            ></div>
+            <div
+              class="w-8px h-8px bg-red relative z-1"
+              style="transform: rotate(45deg)"
+            ></div>
+            <div
+              class="w-8px h-8px bg-red relative z-1"
+              style="transform: rotate(45deg)"
+            ></div>
+          </div>
+
+          <div class="flex justify-between items-center w-100 gap-8">
+            <!-- Left Column -->
+            <div class="w-40 flex flex-column justify-center items-start">
+              <p
+                class="text-red font-xl font-serif uppercase tracking-wide mb-4 italic"
+              >
+                (LOCATION)
+              </p>
+              <h2
+                class="animate-split-up mb-4 font-3xl font-serif text-red uppercase leading-none tracking-wide mb-8"
+                style="text-wrap: nowrap"
+              >
+                CARTER ROAD
+              </h2>
+
+              <p
+                class="animate-fade-up font-sm text-red mb-10 max-w-80 leading-relaxed"
+              >
+                A landmark address on Mumbai's most coveted waterfront boulevard
+                — where the city's energy settles into the calm of the Arabian
+                Sea.
+              </p>
+
+              <a
+                href="#"
+                class="animate-fade-up flex gap-4 inline-flex justify-center items-center gap-2 rounded-full text-red no-underline font-xs border-red transition-opacity hover-opacity-70 px-6 py-4"
+              >
+                VIEW IN MAP
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.0004 4H5.52539C5.39278 4 5.26561 3.94732 5.17184 3.85355C5.07807 3.75979 5.02539 3.63261 5.02539 3.5C5.02539 3.36739 5.07807 3.24021 5.17184 3.14645C5.26561 3.05268 5.39278 3 5.52539 3H12.5004C12.633 3 12.7602 3.05268 12.8539 3.14645C12.9477 3.24021 13.0004 3.36739 13.0004 3.5V10.5C13.0004 10.6326 12.9477 10.7598 12.8539 10.8536C12.7602 10.9473 12.633 11 12.5004 11C12.3678 11 12.2406 10.9473 12.1468 10.8536C12.0531 10.7598 12.0004 10.6326 12.0004 10.5V4Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M12.145 3.14521C12.239 3.05114 12.3666 2.99829 12.4997 2.99829C12.6327 2.99829 12.7603 3.05114 12.8543 3.14521C12.9484 3.23928 13.0013 3.36686 13.0013 3.49989C13.0013 3.63293 12.9484 3.76051 12.8543 3.85458L4.35434 12.3546C4.26027 12.4487 4.13268 12.5015 3.99965 12.5015C3.86662 12.5015 3.73903 12.4487 3.64496 12.3546C3.55089 12.2605 3.49805 12.1329 3.49805 11.9999C3.49805 11.8669 3.55089 11.7393 3.64496 11.6452L12.145 3.14521Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Right Column (Map) -->
+            <div class="w-50 flex justify-center items-center relative">
+              <div id="map-container" class="relative w-100">
+                <img
+                  id="map-svg"
+                  src="svg/map.svg"
+                  alt="Carter Road Map"
+                  class="w-100 h-auto"
+                />
+
+                <!-- Map Popup -->
+                <div
+                  id="map-popup"
+                  class="absolute bg-spec-red p-4 map-popup-desktop"
+                >
+                  <div class="flex items-start gap-4">
+                    <img src="/svg/location.svg" alt="" srcset="" />
+                    <div class="flex flex-column gap-1">
+                      <p class="text-gold font-xs fw-600 tracking-wide">
+                        18, HIRAL KHUSHI PALACIO
+                      </p>
+                      <p
+                        class="text-gold font-xxs tracking-wide uppercase opacity-80"
+                      >
+                        CARTER ROAD, BANDRA (W)<br />MUMBAI MAHARASHTRA, 400 050
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section
+          id="amenities-section"
+          class="relative w-100 flex flex-column py-120 overflow-hidden bg-dark-red"
+        >
+          <!-- Top Bar -->
+          <div
+            class="flex justify-between items-center w-100 px-24 mobile-amenities-topbar"
+          >
+            <div class="font-xl fw-300 mb-4 font-serif italic text-white">
+              (PRIVATE AMENITIES)
+            </div>
+            <!-- Custom Pagination Container -->
+            <div
+              class="amenities-pagination font-xs text-white flex gap-2 cursor-pointer z-10 relative hide-on-mobile"
+            ></div>
+          </div>
+
+          <div class="amenities-title text-center w-100 px-24 mb-10">
+            <h2
+              class="animate-split-up fw-300 font-3xl font-serif text-gold uppercase leading-none tracking-wide"
+            >
+              EVERY LUXURY.<br />ENTIRELY YOURS.
+            </h2>
+          </div>
+
+          <!-- Swiper Container -->
+          <div class="swiper amenities-swiper w-100 mt-10">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Hero Background.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Infinity Pool"
+                    data-title="Rooftop Infinity Pool"
+                    data-desc="The only private rooftop swimming pool on Carter Road, offering a serene escape above the city."
+                  />
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Modern Dining Area.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Dining Area"
+                    data-title="Exquisite Dining Area"
+                    data-desc="A beautifully designed modern dining space, perfect for hosting private dinners and exclusive gatherings."
+                  />
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Modern Backyard Patio.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Backyard Patio"
+                    data-title="Private Patio Oasis"
+                    data-desc="Your own private backyard patio oasis, combining modern aesthetics with nature for ultimate relaxation."
+                  />
+                </div>
+              </div>
+              <!-- Slide 4-8 Placeholders -->
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Hero Background.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Placeholder"
+                    data-title="Luxury Amenity 4"
+                    data-desc="Description for luxury amenity 4 goes here."
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Hero Background.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Placeholder"
+                    data-title="Luxury Amenity 5"
+                    data-desc="Description for luxury amenity 5 goes here."
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Hero Background.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Placeholder"
+                    data-title="Luxury Amenity 6"
+                    data-desc="Description for luxury amenity 6 goes here."
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Hero Background.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Placeholder"
+                    data-title="Luxury Amenity 7"
+                    data-desc="Description for luxury amenity 7 goes here."
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-amenity">
+                <div class="w-100 h-100 overflow-hidden">
+                  <img
+                    src="Images/Modern Backyard Patio.webp"
+                    class="w-100 h-100 object-cover"
+                    data-parallax="true"
+                    alt="Placeholder"
+                    data-title="Luxury Amenity 8"
+                    data-desc="Description for luxury amenity 8 goes here."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Content Area -->
+          <div class="dynamic-content-area w-100 px-24 pt-24">
+            <h3 id="amenity-title" class="text-gold font-sm fw-300 mb-2">
+              Rooftop Infinity Pool
+            </h3>
+            <p
+              id="amenity-desc"
+              class="text-white font-sm max-w-40 mx-auto leading-relaxed opacity-80"
+            >
+              The only private rooftop swimming pool on Carter Road, offering a
+              serene escape above the city.
+            </p>
+          </div>
+
+          <!-- Mobile Pagination Arrows (Below Content) -->
+          <div
+            class="mobile-arrows flex gap-6 mt-6 items-center w-100 px-24 mt-8 hide-on-desktop"
+          >
+            <div
+              class="amenities-prev cursor-pointer flex items-center justify-center transition-all hover-opacity-70"
+            >
+              <img
+                src="svg/guidance_right-arrow.svg"
+                alt="Prev"
+                style="transform: scaleX(-1); width: 24px"
+              />
+            </div>
+            <div
+              class="amenities-next cursor-pointer flex items-center justify-center transition-all hover-opacity-70"
+            >
+              <img
+                src="svg/guidance_right-arrow.svg"
+                alt="Next"
+                style="width: 24px"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section
+          id="philosophy-section"
+          class="relative w-100 py-120 bg-body overflow-hidden"
+        >
+          <!-- Top Right Title -->
+          <div
+            class="absolute font-xl fw-300 font-serif italic text-red uppercase animate-fade-up"
+            style="top: 60px; right: 40px; z-index: 10"
+          >
+            (THE PALACIO PHILOSOPHY)
+          </div>
+
+          <div class="flex items-center w-100 relative">
+            <!-- Overlapping Title (First in DOM for Mobile Stacking) -->
+            <h2
+              class="absolute font-3xl font-serif text-red uppercase leading-none z-10 animate-split-up"
+              style="top: 20%; left: 35%; white-space: nowrap; z-index: 2"
+            >
+              A VISION OF<br />PRIVATE LUXURY
+            </h2>
+
+            <!-- Left Image -->
+            <div style="width: 48%" class="overflow-hidden animate-clip-up">
+              <img
+                src="Images/Philosophy (1).webp"
+                alt="The Palacio Philosophy"
+                class="w-100 object-cover"
+                style="height: 80vh; max-height: 750px"
+                data-parallax="true"
+              />
+            </div>
+
+            <!-- Paragraph -->
+            <div
+              class="absolute z-10 animate-fade-up"
+              style="bottom: 10%; right: 8%; width: 30%; min-width: 300px"
+            >
+              <p
+                class="text-red font-sm leading-relaxed fw-300"
+                style="opacity: 0.9"
+              >
+                Designed for those who value privacy above prestige, Palacio
+                redefines luxury living through complete ownership, thoughtful
+                design, and uncompromising exclusivity. Every floor, every view,
+                and every experience has been curated for one family, creating a
+                residence that feels less like a home and more like a legacy.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Developer Heritage Pinned Section -->
+        <div id="heritage-pin-wrapper">
+          <section id="heritage-section">
+            <!-- SLIDE 1: B. Kandhari Group -->
+            <div class="heritage-slide heritage-slide-1" id="heritage-slide-1">
+              <!-- Background Split (Right side city skyline) -->
+              <div class="kandhari-bg">
+                <img
+                  src="Images/B Khandari Group bg.webp"
+                  class="w-100 h-100 object-cover"
+                  alt="Mumbai City Skyline"
+                />
+              </div>
+
+              <!-- Content Row -->
+              <div class="kandhari-content">
+                <!-- Left: Text -->
+                <div class="kandhari-left">
+                  <div class="kandhari-text-block">
+                    <div class="heritage-line-mask">
+                      <p
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        data-heritage-slide="1"
+                      >
+                        FOUNDED 1982
+                      </p>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none mt-4"
+                        data-heritage-slide="1"
+                      >
+                        B. KANDHARI
+                      </h2>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none"
+                        data-heritage-slide="1"
+                      >
+                        GROUP
+                      </h2>
+                    </div>
+                    <p
+                      class="heritage-para text-white font-sm leading-relaxed fw-300 mt-8"
+                      style="opacity: 0.9; max-width: 320px"
+                    >
+                      Founded by Bihari P. Kandhari and Hiru B. Kandhari, the B.
+                      Kandhari Group has spent over four decades defining luxury
+                      across Mumbai's most coveted addresses. A name synonymous
+                      with integrity, craftsmanship, and enduring value.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Right: Founders Portrait -->
+                <div class="kandhari-right">
+                  <div class="heritage-img-mask">
+                    <img
+                      src="Images/BKhandari Group.webp"
+                      alt="B. Kandhari Group Founders"
+                      class="kandhari-portrait heritage-img"
+                      data-heritage-slide="1"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Stats Row -->
+              <div class="kandhari-stats">
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="1">
+                    <h3
+                      class="text-gold text-center font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      42+
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Years of Excellence
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="1">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      12,000+
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Residential Properties
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="1">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      10,000+
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Commercial Properties
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="1">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      1982
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Year Established
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: Khushi World (shares same physical space, hidden initially) -->
+            <div class="heritage-slide heritage-slide-2" id="heritage-slide-2">
+              <!-- Background Split (Right side building) -->
+              <div class="kandhari-bg heritage-img-mask">
+                <img
+                  src="Images/Khushi World Background.webp"
+                  class="w-100 h-100 object-cover heritage-img"
+                  data-heritage-slide="2"
+                  alt="Khushi World Building"
+                />
+              </div>
+
+              <!-- Content Row -->
+              <div class="kandhari-content">
+                <!-- Left: Text -->
+                <div class="kandhari-left">
+                  <div class="kandhari-text-block">
+                    <div class="heritage-line-mask">
+                      <p
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        data-heritage-slide="2"
+                      >
+                        VALIDATED BY FORBES INDIA
+                      </p>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none mt-4"
+                        data-heritage-slide="2"
+                      >
+                        KHUSHI
+                      </h2>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none"
+                        data-heritage-slide="2"
+                      >
+                        WORLD
+                      </h2>
+                    </div>
+                    <p
+                      class="heritage-para text-white font-sm leading-relaxed fw-300 mt-8"
+                      style="opacity: 0.9; max-width: 320px"
+                    >
+                      The visionary force behind iconic addresses like Khushi
+                      Belmondo and over 150+ landmark transactions, Khushi World
+                      brings an unmatched track record of delivering the
+                      extraordinary. Recognised by Forbes India. Trusted by over
+                      20,000 families.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Right: Interior Portrait -->
+                <div class="kandhari-right">
+                  <div class="heritage-img-mask">
+                    <img
+                      src="Images/Khushi World.webp"
+                      alt="Khushi World Interior"
+                      class="kandhari-portrait heritage-img"
+                      data-heritage-slide="2"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Stats Row -->
+              <div class="kandhari-stats">
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="2">
+                    <h3
+                      class="text-gold text-center font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      150+
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Landmark Transactions
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="2">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      20,000+
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Families Served
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="2">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      Forbes
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      India Validated
+                    </p>
+                  </div>
+                </div>
+                <div class="heritage-line-mask">
+                  <div class="heritage-line" data-heritage-slide="2">
+                    <h3
+                      class="text-gold font-sans m-0 leading-none fw-400 kandhari-stat-number"
+                    >
+                      Icons
+                    </h3>
+                    <p
+                      class="text-gold m-0 kandhari-stat-label"
+                      style="opacity: 0.8"
+                    >
+                      Belmondo &amp; Beyond
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: The Legacy Behind Palacio -->
+            <div class="heritage-slide heritage-slide-3" id="heritage-slide-3">
+              <!-- Background Split (Right side building) -->
+              <div class="kandhari-bg heritage-img-mask">
+                <img
+                  src="Images/Legacy Background.webp"
+                  class="w-100 h-100 object-cover heritage-img"
+                  data-heritage-slide="3"
+                  alt="Palacio Building Legacy"
+                />
+              </div>
+
+              <!-- Content Row -->
+              <div class="kandhari-content">
+                <!-- Left: Text -->
+                <div class="kandhari-left">
+                  <div class="kandhari-text-block">
+                    <div class="heritage-line-mask">
+                      <p
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        data-heritage-slide="3"
+                      >
+                        FOUR DECADES OF PROVEN TRUST
+                      </p>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-white font-2xl fw-300 font-serif uppercase leading-none mt-4"
+                        data-heritage-slide="3"
+                      >
+                        THE LEGACY
+                      </h2>
+                    </div>
+                    <div class="heritage-line-mask">
+                      <h2
+                        class="heritage-line text-white font-2xl fw-300 font-serif uppercase leading-none"
+                        data-heritage-slide="3"
+                      >
+                        BEHIND <span class="text-gold">PALACIO</span>
+                      </h2>
+                    </div>
+                    <p
+                      class="heritage-para text-white font-sm leading-relaxed fw-300 mt-8"
+                      style="opacity: 0.9; max-width: 320px"
+                    >
+                      A strategic alliance between two of Mumbai's most
+                      distinguished names — united to deliver a singular
+                      masterpiece on Carter Road.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Right: Interior Portrait -->
+                <div class="kandhari-right">
+                  <div class="heritage-img-mask">
+                    <img
+                      src="Images/Legacy Image.webp"
+                      alt="Palacio Legacy Interior"
+                      class="kandhari-portrait heritage-img"
+                      data-heritage-slide="3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Gallery Section -->
+        <section
+          id="gallery-section"
+          class="relative w-100 py-120 bg-body overflow-hidden"
+        >
+          <div class="gallery-container">
+            <div class="text-center mb-10 px-24">
+              <h2
+                class="font-3xl font-serif text-red uppercase leading-none mb-4 animate-split-up"
+              >
+                A GLIMPSE INTO PALACIO
+              </h2>
+              <p
+                class="text-red font-sm leading-relaxed fw-300 mx-auto animate-fade-up"
+                style="opacity: 0.9; max-width: 500px"
+              >
+                Explore the spaces that define Palacio—from elegant interiors<br
+                  class="hidden-mobile"
+                />
+                and wellness retreats to the only rooftop pool on Carter
+                Road.<br class="hidden-mobile" />
+                Every detail is curated exclusively for one family.
+              </p>
+            </div>
+
+            <div class="swiper gallery-swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="aspect-ratio: 3287/4383">
+                  <img
+                    src="Images/gallery/Image from xconvert (1).webp"
+                    alt="Palacio Interior"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="aspect-ratio: 2998/1686">
+                  <img
+                    src="Images/gallery/Image 9.webp"
+                    alt="Palacio Rooftop Pool"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide" style="aspect-ratio: 3287/4383">
+                  <img
+                    src="Images/gallery/Image 3.webp"
+                    alt="Palacio Building Render"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide" style="aspect-ratio: 2998/1686">
+                  <img
+                    src="Images/gallery/Image 10.webp"
+                    alt="Palacio Pool Lounge"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide" style="aspect-ratio: 3300/3666">
+                  <img
+                    src="Images/gallery/Image 11.webp"
+                    alt="Palacio Living Room"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide" style="aspect-ratio: 4198/4899">
+                  <img
+                    src="Images/gallery/Image 5.webp"
+                    alt="Palacio Dining Room"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide" style="aspect-ratio: 3300/1856">
+                  <img
+                    src="Images/gallery/Image 8.webp"
+                    alt="Palacio Sunset View"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide" style="aspect-ratio: 3300/3666">
+                  <img
+                    src="Images/gallery/Image from xconvert.webp"
+                    alt="Palacio Foyer"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide" style="aspect-ratio: 4286/2411">
+                  <img
+                    src="Images/gallery/image+7.webp"
+                    alt="Palacio Terrace Deck"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="gallery-controls">
+              <button
+                class="gallery-arrow-btn gallery-prev"
+                aria-label="Previous slide"
+              >
+                <svg
+                  class="gallery-arrow-svg"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_167_7210_gallery_prev)">
+                    <path
+                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
+                      stroke="currentColor"
+                      stroke-width="2.54405"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_167_7210_gallery_prev">
+                      <rect
+                        width="61.0573"
+                        height="61.0573"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 61.0573 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                class="gallery-arrow-btn gallery-next"
+                aria-label="Next slide"
+              >
+                <svg
+                  class="gallery-arrow-svg"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_167_7210_gallery_next)">
+                    <path
+                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
+                      stroke="currentColor"
+                      stroke-width="2.54405"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_167_7210_gallery_next">
+                      <rect
+                        width="61.0573"
+                        height="61.0573"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 61.0573 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer-section w-100 flex flex-column">
+          <div class="top relative w-100">
+            <img
+              src="Images/Footer Image.webp"
+              class="absolute top-0 left-0 w-100 h-100 object-cover"
+              alt="Footer Background"
+              loading="lazy"
+            />
+            <div
+              class="footer-top-text absolute top-0 left-0 z-10 text-white justify-start"
+            >
+              <h2
+                class="font-serif font-4xl italic uppercase leading-none mb-4"
+              >
+                BEGIN YOUR<br />CONVERSATION
+              </h2>
+              <p class="font-sans font-sm opacity-90 leading-relaxed fw-300">
+                18 Hiral Khushi Palacio is not for everyone — it is for one
+                family alone. If you are that family, reach out and our team
+                will curate an exclusive experience just for you.
+              </p>
+            </div>
+
+            <!-- Overlapping Form -->
+            <div
+              class="footer-form-wrapper absolute bottom-0 right-0 z-20 bg-dark-red flex flex-column justify-center"
+            >
+              <h3
+                class="text-gold font-serif font-2xl italic uppercase text-center mb-2"
+              >
+                REQUEST A<br />PRIVATE VIEWING
+              </h3>
+              <p
+                class="footer-subtitle text-white opacity-80 font-sans font-sm text-center mb-8 fw-300"
+              >
+                Our manager will contact you as soon as possible.
+              </p>
+
+              <form class="flex flex-column gap-6 w-100">
+                <div class="input-group relative">
+                  <input
+                    type="text"
+                    class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+                    placeholder="NAME"
+                  />
+                </div>
+                <div class="input-group relative">
+                  <input
+                    type="email"
+                    class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+                    placeholder="EMAIL"
+                  />
+                </div>
+                <div class="input-group relative">
+                  <input
+                    type="tel"
+                    class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+                    placeholder="PHONE"
+                  />
+                </div>
+                <div class="input-group relative mt-2">
+                  <textarea
+                    class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none resize-none"
+                    rows="2"
+                    placeholder="MESSAGE"
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="btn-submit mt-4 bg-gold text-dark py-4 rounded-full uppercase font-sm fw-600 tracking-wide border-none cursor-pointer hover-opacity transition-opacity w-100"
+                >
+                  REQUEST
+                </button>
+              </form>
+              <p
+                class="footer-privacy text-white opacity-60 font-sans font-xs mt-6 text-center leading-relaxed"
+              >
+                By sending your request, you're agreeing to our privacy
+                policy.<br />
+                We promise to keep your personal information safe and secure
+              </p>
+            </div>
+          </div>
+          <div class="bottom relative w-100 bg-dark-red">
+            <!-- Details Grid -->
+            <div class="footer-details-block">
+              <div class="footer-details-grid">
+                <div class="text-gold">Property</div>
+                <div class="fw-300">
+                  Carter Road, Bandra West, Mumbai 400050
+                </div>
+
+                <div class="text-gold">RERA No</div>
+                <div class="fw-300">A51800003272</div>
+
+                <div class="text-gold">Developer</div>
+                <div class="fw-300">
+                  Khushi World Developers (B.Kandhari Venture)
+                </div>
+
+                <div class="text-gold">Sales Office</div>
+                <div class="fw-300">
+                  891 Blue Nile CHS, 24th Road, Bandra West
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom-wrapper">
+              <!-- Three Columns -->
+              <div class="footer-columns">
+                <div class="footer-column">
+                  <div class="footer-col-title">(GET IN TOUCH)</div>
+                  <div class="footer-col-content">
+                    <h3 class="footer-brand">18 HIRAL KHUSHI</h3>
+                    <p class="footer-subbrand">
+                      PALACIO &middot; CARTER ROAD, BANDRA WEST
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer-column">
+                  <div class="footer-col-title">(SALES OFFICE)</div>
+                  <div class="footer-col-content">
+                    <p class="footer-address">
+                      891, Blue Nile CHS, 4th Floor,<br />
+                      24th Road, Bandra West,<br />
+                      Mumbai &mdash; 400050
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer-column">
+                  <div class="footer-col-title">(CONTACT)</div>
+                  <div class="footer-col-content">
+                    <a
+                      href="mailto:INFO@KHUSHI-WORLD.COM"
+                      class="footer-link email-link"
+                      >INFO@KHUSHI-WORLD.COM</a
+                    >
+                    <a href="tel:+919821018184" class="footer-link"
+                      >+91 98210 18184</a
+                    >
+                    <a href="tel:+919920303061" class="footer-link"
+                      >+91 99203 03061</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Legal Disclosure -->
+              <div class="footer-legal-block">
+                <h4 class="legal-title">Legal Disclosure</h4>
+                <p class="legal-text">
+                  RERA Registration No: A51800003272. Khushi World Developers
+                  &mdash; A B.Kandhari Venture.<br />
+                  All prices are indicative and subject to change. Renders and
+                  images are for representation purposes only. Please verify all
+                  specifications, RERA details and pricing directly with our
+                  authorised sales team.
+                </p>
+              </div>
+
+              <!-- Copyright Block -->
+              <div class="footer-copyright-block">
+                <div class="copyright-divider"></div>
+                <p class="copyright-text">
+                  &copy; 2026 Khushi World Developers Pvt. Ltd. &mdash;
+                  B.Kandhari Venture. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Specifications Overlay -->
+    <div
+      id="specs-overlay"
+      class="fixed top-0 left-0 w-screen h-screen flex z-100 hidden"
+    >
+      <!-- Left Side: Image -->
+      <div class="specs-image-container relative w-50 h-100 overflow-hidden">
+        <img
+          src="Images/Specifications%20(1).webp"
+          class="absolute top-0 left-0 w-100 h-100 object-cover"
+          alt="Specifications Image"
+        />
+      </div>
+
+      <!-- Right Side: Content -->
+      <div
+        class="specs-content-container relative w-50 h-100 bg-spec-red flex flex-column justify-center p-10"
+      >
+        <button
+          id="close-specs"
+          class="absolute font-xl text-white no-underline bg-transparent top-2rem right-2rem border-none cursor-pointer opacity-70 transition-opacity"
+        >
+          &#x2715;
+        </button>
+
+        <div class="specs-content">
+          <p class="text-gold font-xs uppercase tracking-wide mb-2">
+            The Property
+          </p>
+          <p class="font-2xl font-serif text-white mb-10">Specifications</p>
+
+          <div class="w-100 flex flex-column gap-4 text-white font-sm mb-10">
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Configuration</span
+              ><span class="fw-300">10 BHK</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Ownership</span
+              ><span class="fw-300">Entire Building</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Furnishing</span
+              ><span class="fw-300">Fully Furnished</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Status</span
+              ><span class="fw-300">Ready to Move</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Location</span
+              ><span class="fw-300">Carter Road, Bandra</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">RERA No.</span
+              ><span class="fw-300">A51800003272</span>
+            </div>
+            <div
+              class="flex justify-between border-bottom pb-2 border-white-30"
+            >
+              <span class="opacity-80">Developer</span
+              ><span class="fw-300">Khushi World Developers</span>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-end w-100">
+            <div class="flex flex-column">
+              <p class="text-gold font-xs mb-4">What's included</p>
+              <ul
+                class="text-white font-xs opacity-80 pl-4 flex flex-column gap-1 m-0"
+              >
+                <li>Private rooftop infinity pool</li>
+                <li>Dedicated yoga room & meditation zone</li>
+                <li>CrossFit facility within premises</li>
+                <li>Children's play area</li>
+                <li>Private reading corner & library lounge</li>
+                <li>Rooftop terrace with sea view</li>
+                <li>24/7 private security — entire building</li>
+                <li>Fully furnished interiors — move-in ready</li>
+                <li>Dedicated private parking</li>
+                <li>Sea breeze from Carter Road Promenade</li>
+              </ul>
+            </div>
+            <div class="flex justify-center items-center">
+              <a
+                href="#"
+                class="flex justify-center items-center text-center rounded-full text-gold no-underline font-xs border-gold transition-opacity hover-opacity-70 uppercase tracking-wide w-150px h-150px p-4"
+              >
+                Schedule a<br />Private Booking
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floor Plan Overlay -->
+    <div
+      id="floor-plan-overlay"
+      class="fixed top-0 left-0 w-screen h-screen flex z-100 hidden"
+    >
+      <!-- Left Side: Main Floor Plan Image -->
+      <div
+        class="floor-plan-image-container relative w-50 h-100 overflow-hidden flex justify-center items-center bg-light"
+      >
+        <img
+          id="floor-plan-main-image"
+          src="Images/Floor%20Plan%204.webp"
+          class="absolute w-100 h-100 object-contain p-8"
+          alt="Floor Plan"
+        />
+      </div>
+
+      <!-- Right Side: Content & Thumbnails -->
+      <div
+        class="floor-plan-content-container relative w-50 h-100 bg-spec-red flex flex-column justify-between p-10"
+      >
+        <!-- Close Button -->
+        <button
+          id="close-floor-plan"
+          class="absolute font-xl text-white no-underline bg-transparent top-2rem right-2rem border-none cursor-pointer opacity-70 transition-opacity"
+        >
+          &#x2715;
+        </button>
+
+        <div class="floor-plan-content mt-10">
+          <p
+            id="fp-subtitle"
+            class="text-gold font-xs uppercase tracking-wide mb-2 italic"
+          >
+            (TERRACE)
+          </p>
+          <h2 id="fp-title" class="font-2xl font-serif text-white mb-10 fw-300">
+            YOUR PRIVATE ROOFTOP RETREAT
+          </h2>
+          <p
+            id="fp-desc"
+            class="text-white font-xs uppercase tracking-wide mb-10 opacity-80 max-w-80 leading-relaxed"
+          >
+            FEATURING THE ONLY ROOFTOP SWIMMING POOL ON CARTER ROAD, THIS
+            EXCLUSIVE TERRACE LEVEL COMBINES OPEN-AIR LEISURE, PANORAMIC VIEWS,
+            AND PRIVATE OUTDOOR LIVING IN ONE EXTRAORDINARY SETTING.
+          </p>
+
+          <h3
+            id="fp-plan-name"
+            class="font-lg font-serif text-white fw-300 mb-2"
+          >
+            Terrace Plan
+          </h3>
+          <div class="flex items-end gap-2 text-white">
+            <span id="fp-sqft" class="font-3xl font-serif leading-none font-4xl"
+              >1562</span
+            >
+            <span class="font-sm mb-2 opacity-80 pb-1">sqft.</span>
+          </div>
+        </div>
+
+        <!-- Carousel Thumbnails -->
+        <div class="floor-plan-thumbnails flex gap-6 mt-auto pb-6">
+          <div
+            class="thumbnail-wrapper cursor-pointer p-1 transition-opacity hover-opacity-100 w-80px h-80px border-transparent opacity-60"
+            data-index="0"
+          >
+            <img
+              src="Images/Floor%20Plan%201.webp"
+              class="w-100 h-100 object-cover bg-white"
+              alt="Floor Plan 1"
+            />
+          </div>
+          <div
+            class="thumbnail-wrapper cursor-pointer p-1 transition-opacity hover-opacity-100 w-80px h-80px border-transparent opacity-60"
+            data-index="1"
+          >
+            <img
+              src="Images/Floor%20Plan%202.webp"
+              class="w-100 h-100 object-cover bg-white"
+              alt="Floor Plan 2"
+            />
+          </div>
+          <div
+            class="thumbnail-wrapper cursor-pointer p-1 transition-opacity hover-opacity-100 w-80px h-80px border-transparent opacity-60"
+            data-index="2"
+          >
+            <img
+              src="Images/Floor%20Plan%203.webp"
+              class="w-100 h-100 object-cover bg-white"
+              alt="Floor Plan 3"
+            />
+          </div>
+          <div
+            class="thumbnail-wrapper cursor-pointer p-1 transition-opacity hover-opacity-100 active-thumb w-80px h-80px"
+            data-index="3"
+            style="border: 1px solid var(--gold); opacity: 1"
+          >
+            <img
+              src="Images/Floor%20Plan%204.webp"
+              class="w-100 h-100 object-cover bg-white"
+              alt="Floor Plan 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobile-menu-overlay"
+      class="fixed top-0 left-0 w-screen h-screen flex flex-column justify-center items-center z-100 hidden bg-dark-red"
+    >
+      <button
+        id="close-mobile-menu"
+        class="absolute font-xl text-white no-underline bg-transparent top-2rem right-2rem border-none cursor-pointer opacity-70 transition-opacity"
+      >
+        &#x2715;
+      </button>
+
+      <nav class="flex flex-column gap-8 items-center text-center">
+        <a
+          href="#"
+          class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >About</a
+        >
+        <a
+          href="#"
+          class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >Amenities</a
+        >
+        <a
+          href="#"
+          class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >Gallery</a
+        >
+        <a
+          href="#"
+          class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >Heritage</a
+        >
+        <a
+          href="#"
+          class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
+          >Enquire</a
+        >
+      </nav>
+
+      <div class="absolute w-100 flex justify-center" style="bottom: 3rem">
+        <a
+          href="#"
+          class="btn-secondary font-sm uppercase no-underline px-6 py-4 tracking-wide transition-all border-white text-white"
+          >Call Now</a
+        >
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
