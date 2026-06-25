@@ -400,8 +400,8 @@ gsap.fromTo(
     duration: 2.5,
     ease: "power3.inOut",
     scrollTrigger: {
-      trigger: "#location-section",
-      start: "top 65%",
+      trigger: "#map-container",
+      start: "top 85%",
     },
   },
 );
