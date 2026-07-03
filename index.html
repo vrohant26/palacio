@@ -26,34 +26,34 @@
       </div>
       <nav class="nav flex gap-8 items-center">
         <a
-          href="#"
+          href="#about-section"
           class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >About</a
         >
         <a
-          href="#"
+          href="#amenities-section"
           class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >AMENITIES</a
         >
         <a
-          href="#"
+          href="#gallery-section"
           class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >GALLERY</a
         >
         <a
-          href="#"
+          href="#heritage-section"
           class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >HERITAGE</a
         >
         <a
-          href="#"
+          href="#enquire-section"
           class="font-sm uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >ENQUIRE</a
         >
       </nav>
       <div class="header-action">
         <a
-          href="#"
+          href="tel:+919821018184"
           class="btn-primary font-sm uppercase text-white font-serif no-underline tracking-wide transition-colors"
           >CALL NOW</a
         >
@@ -83,7 +83,11 @@
         <section
           class="hero relative flex items-end w-100 grow min-h-svh overflow-hidden"
         >
-          <div class="hero-bg"></div>
+          <div class="hero-bg-carousel">
+            <div class="hero-slide" style="background-image: url('Images/Hero%20Background.webp'); opacity: 1; z-index: 1;"></div>
+            <div class="hero-slide" style="background-image: url('Images/Modern%20Backyard%20Patio.webp');"></div>
+            <div class="hero-slide" style="background-image: url('Images/Modern%20Dining%20Area.webp');"></div>
+          </div>
           <div
             class="hero-content relative flex justify-between items-end w-100 pb-8 z-1"
           >
@@ -93,7 +97,9 @@
               WELCOME TO A<br />HOME ABOVE<br />THE HORIZON
             </h2>
             <div class="hero-action flex flex-column items-end gap-4">
-              <div class="hero-btn-wrapper overflow-hidden flex justify-end w-100">
+              <div
+                class="hero-btn-wrapper overflow-hidden flex justify-end w-100"
+              >
                 <a
                   href="#"
                   class="btn-secondary font-xs uppercase no-underline px-6 py-4 tracking-wide transition-all"
@@ -129,7 +135,7 @@
                 (ABOUT)
               </div>
               <h2
-                class="animate-split-up font-2xl font-serif fw-600 italic text-red uppercase leading-none tracking-wide"
+                class="animate-split-up font-2xl font-serif fw-400 italic text-red uppercase leading-none tracking-wide"
               >
                 A RESIDENCE<br />WITHOUT<br />COMPARISON
               </h2>
@@ -269,7 +275,7 @@
                 (LOCATION)
               </p>
               <h2
-                class="animate-split-up mb-4 font-3xl font-serif text-red uppercase leading-none tracking-wide mb-8"
+                class="animate-split-up mb-4 fw-400 font-3xl font-serif text-red uppercase leading-none tracking-wide mb-8"
                 style="text-wrap: nowrap"
               >
                 CARTER ROAD
@@ -361,7 +367,7 @@
 
           <div class="amenities-title text-center w-100 px-24 mb-10">
             <h2
-              class="animate-split-up fw-300 font-3xl font-serif text-gold uppercase leading-none tracking-wide"
+              class="animate-split-up fw-400 font-3xl font-serif text-gold uppercase leading-none tracking-wide"
             >
               EVERY LUXURY.<br />ENTIRELY YOURS.
             </h2>
@@ -512,54 +518,181 @@
           </div>
         </section>
 
-        <!-- Philosophy Section -->
+        <!-- Gallery Section -->
         <section
-          id="philosophy-section"
+          id="gallery-section"
           class="relative w-100 py-120 bg-body overflow-hidden"
         >
-          <!-- Top Right Title -->
-          <div
-            class="absolute font-xl fw-300 font-serif italic text-red uppercase animate-fade-up"
-            style="top: 60px; right: 40px; z-index: 10"
-          >
-            (THE PALACIO PHILOSOPHY)
-          </div>
-
-          <div class="flex items-center w-100 relative">
-            <!-- Overlapping Title (First in DOM for Mobile Stacking) -->
-            <h2
-              class="absolute font-3xl font-serif text-red uppercase leading-none z-10 animate-split-up"
-              style="top: 20%; left: 35%; white-space: nowrap; z-index: 2"
-            >
-              A VISION OF<br />PRIVATE LUXURY
-            </h2>
-
-            <!-- Left Image -->
-            <div style="width: 48%" class="overflow-hidden animate-clip-up">
-              <img
-                src="Images/Philosophy (1).webp"
-                alt="The Palacio Philosophy"
-                class="w-100 object-cover"
-                style="height: 80vh; max-height: 750px"
-                data-parallax="true"
-              />
+          <div class="gallery-container">
+            <div class="text-center mb-10 px-24">
+              <h2
+                class="font-3xl font-serif text-red fw-400 uppercase leading-none mb-4 animate-split-up"
+              >
+                A GLIMPSE INTO PALACIO
+              </h2>
+              <p
+                class="text-red font-sm leading-relaxed fw-300 mx-auto animate-fade-up"
+                style="opacity: 0.9; max-width: 500px"
+              >
+                Explore the spaces that define Palacio—from elegant interiors<br
+                  class="hidden-mobile"
+                />
+                and wellness retreats to the only rooftop pool on Carter
+                Road.<br class="hidden-mobile" />
+                Every detail is curated exclusively for one family.
+              </p>
             </div>
 
-            <!-- Paragraph -->
-            <div
-              class="absolute z-10 animate-fade-up"
-              style="bottom: 10%; right: 8%; width: 30%; min-width: 300px"
-            >
-              <p
-                class="text-red font-sm leading-relaxed fw-300"
-                style="opacity: 0.9"
+            <div class="swiper gallery-swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image from xconvert (1).webp"
+                    alt="Palacio Interior"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 9.webp"
+                    alt="Palacio Rooftop Pool"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 3.webp"
+                    alt="Palacio Building Render"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 10.webp"
+                    alt="Palacio Pool Lounge"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 11.webp"
+                    alt="Palacio Living Room"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 5.webp"
+                    alt="Palacio Dining Room"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image 8.webp"
+                    alt="Palacio Sunset View"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/Image from xconvert.webp"
+                    alt="Palacio Foyer"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/gallery/image+7.webp"
+                    alt="Palacio Terrace Deck"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="gallery-controls">
+              <button
+                class="gallery-arrow-btn gallery-prev"
+                aria-label="Previous slide"
               >
-                Designed for those who value privacy above prestige, Palacio
-                redefines luxury living through complete ownership, thoughtful
-                design, and uncompromising exclusivity. Every floor, every view,
-                and every experience has been curated for one family, creating a
-                residence that feels less like a home and more like a legacy.
-              </p>
+                <svg
+                  class="gallery-arrow-svg"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_167_7210_gallery_prev)">
+                    <path
+                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
+                      stroke="currentColor"
+                      stroke-width="2.54405"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_167_7210_gallery_prev">
+                      <rect
+                        width="61.0573"
+                        height="61.0573"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 61.0573 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                class="gallery-arrow-btn gallery-next"
+                aria-label="Next slide"
+              >
+                <svg
+                  class="gallery-arrow-svg"
+                  width="62"
+                  height="62"
+                  viewBox="0 0 62 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_167_7210_gallery_next)">
+                    <path
+                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
+                      stroke="currentColor"
+                      stroke-width="2.54405"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_167_7210_gallery_next">
+                      <rect
+                        width="61.0573"
+                        height="61.0573"
+                        fill="white"
+                        transform="matrix(-1 0 0 1 61.0573 0)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
@@ -585,7 +718,7 @@
                   <div class="kandhari-text-block">
                     <div class="heritage-line-mask">
                       <p
-                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="1"
                       >
                         FOUNDED 1982
@@ -596,15 +729,7 @@
                         class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none mt-4"
                         data-heritage-slide="1"
                       >
-                        B. KANDHARI
-                      </h2>
-                    </div>
-                    <div class="heritage-line-mask">
-                      <h2
-                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none"
-                        data-heritage-slide="1"
-                      >
-                        GROUP
+                        B. KANDHARI GROUP
                       </h2>
                     </div>
                     <p
@@ -716,7 +841,7 @@
                   <div class="kandhari-text-block">
                     <div class="heritage-line-mask">
                       <p
-                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="2"
                       >
                         VALIDATED BY FORBES INDIA
@@ -727,15 +852,7 @@
                         class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none mt-4"
                         data-heritage-slide="2"
                       >
-                        KHUSHI
-                      </h2>
-                    </div>
-                    <div class="heritage-line-mask">
-                      <h2
-                        class="heritage-line text-gold font-2xl fw-300 font-serif uppercase leading-none"
-                        data-heritage-slide="2"
-                      >
-                        WORLD
+                        KHUSHI WORLD
                       </h2>
                     </div>
                     <p
@@ -848,7 +965,7 @@
                   <div class="kandhari-text-block">
                     <div class="heritage-line-mask">
                       <p
-                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-600"
+                        class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="3"
                       >
                         FOUR DECADES OF PROVEN TRUST
@@ -897,187 +1014,60 @@
           </section>
         </div>
 
-        <!-- Gallery Section -->
+        <!-- Philosophy Section -->
         <section
-          id="gallery-section"
+          id="philosophy-section"
           class="relative w-100 py-120 bg-body overflow-hidden"
         >
-          <div class="gallery-container">
-            <div class="text-center mb-10 px-24">
-              <h2
-                class="font-3xl font-serif text-red uppercase leading-none mb-4 animate-split-up"
-              >
-                A GLIMPSE INTO PALACIO
-              </h2>
+          <!-- Top Right Title -->
+          <div
+            class="absolute font-xl fw-300 font-serif italic text-red uppercase animate-fade-up"
+            style="top: 60px; right: 40px; z-index: 10"
+          >
+            (THE PALACIO PHILOSOPHY)
+          </div>
+
+          <div class="flex items-center w-100 relative">
+            <!-- Overlapping Title (First in DOM for Mobile Stacking) -->
+            <h2
+              class="absolute fw-400 font-3xl font-serif text-red uppercase leading-none z-10 animate-split-up"
+              style="top: 20%; left: 35%; white-space: nowrap; z-index: 2"
+            >
+              A VISION OF<br />PRIVATE LUXURY
+            </h2>
+
+            <!-- Left Image -->
+            <div style="width: 48%" class="overflow-hidden animate-clip-up">
+              <img
+                src="Images/Philosophy (1).webp"
+                alt="The Palacio Philosophy"
+                class="w-100 object-cover"
+                style="height: 80vh; max-height: 750px"
+                data-parallax="true"
+              />
+            </div>
+
+            <!-- Paragraph -->
+            <div
+              class="absolute z-10 animate-fade-up"
+              style="bottom: 10%; right: 8%; width: 30%; min-width: 300px"
+            >
               <p
-                class="text-red font-sm leading-relaxed fw-300 mx-auto animate-fade-up"
-                style="opacity: 0.9; max-width: 500px"
+                class="text-red font-sm leading-relaxed fw-300"
+                style="opacity: 0.9"
               >
-                Explore the spaces that define Palacio—from elegant interiors<br
-                  class="hidden-mobile"
-                />
-                and wellness retreats to the only rooftop pool on Carter
-                Road.<br class="hidden-mobile" />
-                Every detail is curated exclusively for one family.
+                Designed for those who value privacy above prestige, Palacio
+                redefines luxury living through complete ownership, thoughtful
+                design, and uncompromising exclusivity. Every floor, every view,
+                and every experience has been curated for one family, creating a
+                residence that feels less like a home and more like a legacy.
               </p>
-            </div>
-
-            <div class="swiper gallery-swiper">
-              <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide" style="aspect-ratio: 3287/4383">
-                  <img
-                    src="Images/gallery/Image from xconvert (1).webp"
-                    alt="Palacio Interior"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide" style="aspect-ratio: 2998/1686">
-                  <img
-                    src="Images/gallery/Image 9.webp"
-                    alt="Palacio Rooftop Pool"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide" style="aspect-ratio: 3287/4383">
-                  <img
-                    src="Images/gallery/Image 3.webp"
-                    alt="Palacio Building Render"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 4 -->
-                <div class="swiper-slide" style="aspect-ratio: 2998/1686">
-                  <img
-                    src="Images/gallery/Image 10.webp"
-                    alt="Palacio Pool Lounge"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 5 -->
-                <div class="swiper-slide" style="aspect-ratio: 3300/3666">
-                  <img
-                    src="Images/gallery/Image 11.webp"
-                    alt="Palacio Living Room"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 6 -->
-                <div class="swiper-slide" style="aspect-ratio: 4198/4899">
-                  <img
-                    src="Images/gallery/Image 5.webp"
-                    alt="Palacio Dining Room"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 7 -->
-                <div class="swiper-slide" style="aspect-ratio: 3300/1856">
-                  <img
-                    src="Images/gallery/Image 8.webp"
-                    alt="Palacio Sunset View"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 8 -->
-                <div class="swiper-slide" style="aspect-ratio: 3300/3666">
-                  <img
-                    src="Images/gallery/Image from xconvert.webp"
-                    alt="Palacio Foyer"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <!-- Slide 9 -->
-                <div class="swiper-slide" style="aspect-ratio: 4286/2411">
-                  <img
-                    src="Images/gallery/image+7.webp"
-                    alt="Palacio Terrace Deck"
-                    class="w-100 h-100 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Navigation Controls -->
-            <div class="gallery-controls">
-              <button
-                class="gallery-arrow-btn gallery-prev"
-                aria-label="Previous slide"
-              >
-                <svg
-                  class="gallery-arrow-svg"
-                  width="62"
-                  height="62"
-                  viewBox="0 0 62 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_167_7210_gallery_prev)">
-                    <path
-                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
-                      stroke="currentColor"
-                      stroke-width="2.54405"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_167_7210_gallery_prev">
-                      <rect
-                        width="61.0573"
-                        height="61.0573"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 61.0573 0)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-              <button
-                class="gallery-arrow-btn gallery-next"
-                aria-label="Next slide"
-              >
-                <svg
-                  class="gallery-arrow-svg"
-                  width="62"
-                  height="62"
-                  viewBox="0 0 62 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_167_7210_gallery_next)">
-                    <path
-                      d="M40.7048 12.7197C40.7048 14.6074 42.5696 17.4262 44.4573 19.7922C46.8844 22.8451 49.7846 25.5087 53.1096 27.5414C55.6028 29.0653 58.6252 30.5281 61.0573 30.5281M61.0573 30.5281C58.6252 30.5281 55.6003 31.9909 53.1096 33.5148C49.7846 35.5501 46.8844 38.2137 44.4573 41.2615C42.5696 43.63 40.7048 46.4539 40.7048 48.3365M61.0573 30.5281H1.90735e-06"
-                      stroke="currentColor"
-                      stroke-width="2.54405"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_167_7210_gallery_next">
-                      <rect
-                        width="61.0573"
-                        height="61.0573"
-                        fill="white"
-                        transform="matrix(-1 0 0 1 61.0573 0)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
             </div>
           </div>
         </section>
 
         <!-- Footer Section -->
-        <section class="footer-section w-100 flex flex-column">
+        <section id="enquire-section" class="footer-section w-100 flex flex-column">
           <div class="top relative w-100">
             <img
               src="Images/Footer Image.webp"
@@ -1482,27 +1472,27 @@
 
       <nav class="flex flex-column gap-8 items-center text-center">
         <a
-          href="#"
+          href="#about-section"
           class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >About</a
         >
         <a
-          href="#"
+          href="#amenities-section"
           class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >Amenities</a
         >
         <a
-          href="#"
+          href="#gallery-section"
           class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >Gallery</a
         >
         <a
-          href="#"
+          href="#heritage-section"
           class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >Heritage</a
         >
         <a
-          href="#"
+          href="#enquire-section"
           class="font-2xl uppercase text-white font-serif no-underline tracking-wide transition-opacity hover-opacity-70"
           >Enquire</a
         >
@@ -1510,7 +1500,7 @@
 
       <div class="absolute w-100 flex justify-center" style="bottom: 3rem">
         <a
-          href="#"
+          href="tel:+919821018184"
           class="btn-secondary font-sm uppercase no-underline px-6 py-4 tracking-wide transition-all border-white text-white"
           >Call Now</a
         >

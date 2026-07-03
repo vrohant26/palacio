@@ -1,11 +1,25 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // Initialize Smooth Scroll
-ScrollSmoother.create({
+const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
   smooth: 1.5,
   effects: true,
+});
+
+// Smooth Scroll to Sections
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href");
+    if (targetId === "#") return;
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      smoother.scrollTo(targetElement, true, "top top");
+    }
+  });
 });
 
 // Entrance Animation on Load
@@ -180,6 +194,57 @@ gsap.utils.toArray(".animate-clip-up").forEach((element) => {
   );
 });
 
+// Hero Background Slideshow (Ken Burns Zoom/Fade Transition)
+const heroSlides = gsap.utils.toArray(".hero-slide");
+if (heroSlides.length > 0) {
+  let currentSlideIndex = 0;
+  const slideDuration = 4000; // time each slide is visible (6 seconds)
+  const transitionDuration = 1.5; // transition fade time (1.5 seconds)
+
+  // Start Ken Burns zoom-out on the first slide immediately
+  gsap.fromTo(
+    heroSlides[0],
+    { scale: 1.25 },
+    { scale: 1.0, duration: slideDuration / 1000, ease: "sine.out" },
+  );
+
+  function playSlideshow() {
+    const prevSlide = heroSlides[currentSlideIndex];
+    currentSlideIndex = (currentSlideIndex + 1) % heroSlides.length;
+    const nextSlide = heroSlides[currentSlideIndex];
+
+    // Put next slide on top of previous
+    gsap.set(nextSlide, { zIndex: 1 });
+    gsap.set(prevSlide, { zIndex: 0 });
+
+    // Fade in next slide
+    gsap.fromTo(
+      nextSlide,
+      { opacity: 0 },
+      { opacity: 1, duration: transitionDuration, ease: "power2.inOut" },
+    );
+
+    // Slowly zoom next slide from 1.15 down to 1.0 (Ken Burns Zoom Out)
+    gsap.fromTo(
+      nextSlide,
+      { scale: 1.15 },
+      { scale: 1.0, duration: slideDuration / 1000, ease: "sine.out" },
+    );
+
+    // Fade out previous slide and reset its scale after transition completes
+    gsap.to(prevSlide, {
+      opacity: 0,
+      duration: transitionDuration,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.set(prevSlide, { scale: 1.15 });
+      },
+    });
+  }
+
+  setInterval(playSlideshow, slideDuration);
+}
+
 // Heritage Section – Pinned Scroll with Split-Text Transition
 const heritageSection = document.querySelector("#heritage-section");
 
@@ -240,6 +305,7 @@ if (heritageSection) {
       end: "+=250%",
       pin: true,
       scrub: 0.6,
+      anticipatePin: 1,
     },
   });
 
@@ -252,7 +318,7 @@ if (heritageSection) {
       duration: 0.4,
       ease: "power2.in",
     },
-    0,
+    0.1,
   );
 
   // Slide 1 paragraph lines exit
@@ -264,7 +330,7 @@ if (heritageSection) {
       duration: 0.4,
       ease: "power2.in",
     },
-    0.05,
+    0.15,
   );
 
   // Slide 1 images remain visible underneath Slide 2
@@ -596,6 +662,13 @@ if (closeMobileMenuBtn) {
     mobileMenuTl.reverse();
   });
 }
+
+const mobileMenuLinks = document.querySelectorAll("#mobile-menu-overlay nav a");
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenuTl.reverse();
+  });
+});
 // Amenities Swiper Initialization
 if (document.querySelector(".amenities-swiper")) {
   const amenitiesSwiper = new Swiper(".amenities-swiper", {
@@ -678,7 +751,7 @@ amenitiesMm.add("(min-width: 769px)", () => {
 // Gallery Swiper Initialization
 if (document.querySelector(".gallery-swiper")) {
   const gallerySwiper = new Swiper(".gallery-swiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.5,
     centeredSlides: true,
     loop: true,
     spaceBetween: 20,
@@ -686,8 +759,9 @@ if (document.querySelector(".gallery-swiper")) {
     grabCursor: true,
     breakpoints: {
       769: {
-        slidesPerView: "auto",
-        spaceBetween: 100,
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: false,
       },
     },
     navigation: {
