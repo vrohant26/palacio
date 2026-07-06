@@ -1276,6 +1276,10 @@ nav {
     overflow: visible !important;
 }
 
+.gallery-swiper .swiper-wrapper {
+    align-items: center;
+}
+
 .gallery-swiper .swiper-slide {
     width: 100%;
     height: auto;
@@ -1283,6 +1287,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
     transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
