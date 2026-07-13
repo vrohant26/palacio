@@ -1,11 +1,15 @@
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
+// Configure ScrollTrigger to avoid layout jumps when mobile address bars hide/show
+ScrollTrigger.config({ ignoreMobileResize: true });
+
 // Initialize Smooth Scroll
 const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
   smooth: 1.5,
   effects: true,
+  normalizeScroll: true,
 });
 
 // Smooth Scroll to Sections
@@ -306,6 +310,7 @@ if (heritageSection) {
       pin: true,
       scrub: 0.6,
       anticipatePin: 1,
+      pinType: "transform",
     },
   });
 
@@ -687,16 +692,27 @@ if (document.querySelector(".amenities-swiper")) {
       nextEl: ".amenities-next",
       prevEl: ".amenities-prev",
     },
-    pagination: {
-      el: ".amenities-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">(' + (index + 1) + ")</span>";
-      },
-    },
     on: {
       init: function () {
         setTimeout(initParallax, 100);
+
+        // Initialize custom pagination bullets (exactly 3 bullets for 3 unique slides)
+        const paginationContainer = document.querySelector(".amenities-pagination");
+        if (paginationContainer) {
+          paginationContainer.innerHTML = `
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active" data-index="0">(1)</span>
+            <span class="swiper-pagination-bullet" data-index="1">(2)</span>
+            <span class="swiper-pagination-bullet" data-index="2">(3)</span>
+          `;
+
+          const self = this;
+          paginationContainer.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
+            bullet.addEventListener("click", function () {
+              const idx = parseInt(this.getAttribute("data-index"));
+              self.slideToLoop(idx);
+            });
+          });
+        }
       },
       slideChange: function () {
         const activeSlide = this.slides[this.activeIndex];
@@ -725,6 +741,17 @@ if (document.querySelector(".amenities-swiper")) {
             descEl.textContent = desc;
           }
         }
+
+        // Update active class on custom pagination bullets
+        const realIndex = this.realIndex % 3; // map 0-5 index range to 0-2 bullets
+        const bullets = document.querySelectorAll(".amenities-pagination .swiper-pagination-bullet");
+        bullets.forEach((bullet, idx) => {
+          if (idx === realIndex) {
+            bullet.classList.add("swiper-pagination-bullet-active");
+          } else {
+            bullet.classList.remove("swiper-pagination-bullet-active");
+          }
+        });
       },
     },
   });

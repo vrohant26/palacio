@@ -1,39 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-@font-face {
-    font-family: 'Melodrama';
-    src: url('Fonts/Melodrama%20Fonts/Melodrama-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Melodrama';
-    src: url('Fonts/Melodrama%20Fonts/Melodrama-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Melodrama';
-    src: url('Fonts/Melodrama%20Fonts/Melodrama-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Melodrama';
-    src: url('Fonts/Melodrama%20Fonts/Melodrama-Semibold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Melodrama';
-    src: url('Fonts/Melodrama%20Fonts/Melodrama-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --gold: #E6BE35;
@@ -149,8 +114,8 @@ body {
 
 
 .py-120 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -234,6 +199,7 @@ body {
 
 .font-3xl {
     font-size: clamp(2.5rem, 6vw, 6rem);
+    letter-spacing: -5% !important;
 }
 
 .font-display {
@@ -274,7 +240,7 @@ body {
 
 /* Typography Helpers & Effects */
 .font-serif {
-    font-family: 'Melodrama', serif;
+    font-family: 'Cinzel', serif;
 }
 
 .tracking-wide {
@@ -437,10 +403,19 @@ nav {
 
 .logo-title {
     color: var(--gold);
+    font-size: clamp(1.15rem, 1vw, 1.35rem);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.1;
+    margin: 0;
 }
 
 .logo-subtitle {
-    font-size: 12px;
+    font-size: clamp(9px, 1.2vw, 12px);
+    letter-spacing: 0.22em;
+    opacity: 0.75;
+    margin-top: 4px;
 }
 
 
@@ -569,6 +544,10 @@ nav {
         padding: 64px 24px;
     }
 
+    .border-with-diamonds {
+        display: none !important;
+    }
+
     #about-section>.flex.justify-between {
         flex-direction: column;
         gap: 80px;
@@ -639,6 +618,7 @@ nav {
 
     .swiper-slide-amenity>div {
         height: 500px !important;
+
         /* Mobile inner height static */
     }
 
@@ -648,6 +628,7 @@ nav {
     }
 
     /* Section Padding Unification for Mobile */
+    #gallery-section,
     #about-section,
     #location-section {
         padding: 64px 24px !important;
@@ -755,7 +736,8 @@ nav {
 /* Animate the inner image wrapper instead of the Swiper slide */
 .swiper-slide-amenity>div {
     height: 500px !important;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     transition: height 0.5s ease;
     overflow: hidden;
 }
@@ -1462,7 +1444,7 @@ nav {
 }
 
 .footer-col-title {
-    font-family: 'Melodrama', serif;
+    font-family: 'Cinzel', serif;
     font-style: italic;
     font-size: clamp(15px, 1.3vw, 17px);
     color: rgba(255, 255, 255, 0.4);
@@ -1481,7 +1463,7 @@ nav {
 
 .footer-brand {
     color: var(--gold);
-    font-family: 'Melodrama', serif;
+    font-family: 'Cinzel', serif;
     font-size: clamp(18px, 1.6vw, 22px);
     font-weight: normal;
     text-transform: uppercase;
@@ -1593,7 +1575,7 @@ nav {
 
 .footer-form-wrapper h3 {
     color: var(--gold) !important;
-    font-family: 'Melodrama', serif !important;
+    font-family: 'Cinzel', serif !important;
     font-size: clamp(2rem, 3.5vw, 2.5rem) !important;
     font-style: italic !important;
     font-weight: normal !important;
