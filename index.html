@@ -15,9 +15,7 @@
       class="header fixed top-0 left-0 w-100 flex justify-between items-center px-6 py-4 z-50"
     >
       <div class="logo flex flex-column">
-        <h1 class="logo-title font-serif">
-          18 HIRAL KHUSHI PALACIO
-        </h1>
+        <h1 class="logo-title font-serif">18 HIRAL KHUSHI PALACIO</h1>
         <p class="logo-subtitle text-white uppercase">
           CARTER ROAD, BANDRA WEST
         </p>
@@ -104,33 +102,80 @@
             ></div>
           </div>
           <div
-            class="hero-content relative flex justify-between items-end w-100 pb-8 z-1"
+            class="hero-content relative flex justify-between items-end w-100 z-1"
           >
-            <h2
-              class="hero-title font-3xl fw-400 text-white uppercase font-serif leading-none"
-            >
-              WELCOME TO A<br />HOME ABOVE<br />THE HORIZON
-            </h2>
-            <div class="hero-action flex flex-column items-end gap-4">
-              <div
-                class="hero-btn-wrapper overflow-hidden flex justify-end w-100"
+            <!-- Left Column: Title & Actions -->
+            <div class="hero-left-col flex flex-column items-start gap-8">
+              <h2
+                class="hero-title font-3xl fw-400 text-white uppercase font-serif leading-none"
               >
-                <a
-                  href="#"
-                  class="btn-secondary font-xs uppercase no-underline px-6 py-4 tracking-wide transition-all"
-                  >REQUEST PRIVATE VIEWING</a
-                >
-              </div>
-              <div class="hero-features-wrapper overflow-hidden w-100">
-                <div
-                  class="hero-features flex justify-around w-100 text-gold font-xs"
-                >
+                WELCOME TO A<br />HOME ABOVE<br />THE HORIZON
+              </h2>
+              <div class="hero-left-actions flex items-center gap-6">
+                <div class="hero-btn-wrapper overflow-hidden">
+                  <a
+                    href="#"
+                    class="btn-secondary font-xs uppercase no-underline px-6 py-4 tracking-wide transition-all"
+                    >REQUEST PRIVATE VIEWING</a
+                  >
+                </div>
+                <div class="hero-features flex gap-6 text-gold font-xs">
                   <span class="flex items-center gap-1"
                     >&#10003; Ready to move</span
                   >
                   <span class="flex items-center gap-1"
                     >&#10003; Fully Furnished</span
                   >
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Video Card -->
+            <div class="hero-right-col">
+              <div
+                class="video-card gap-3 cursor-pointer"
+                data-video-src="https://www.youtube.com/embed/R_KYELkTSZ8?autoplay=1"
+              >
+                <div
+                  class="video-card-thumbnail relative overflow-hidden rounded-8"
+                >
+                  <img
+                    src="Images/director.webp"
+                    alt="Founder Interview Thumbnail"
+                    class="w-100 h-100 object-cover"
+                  />
+                  <div
+                    class="video-card-overlay absolute inset-0 flex justify-center items-center"
+                  >
+                    <div
+                      class="play-btn-circle flex justify-center items-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="play-icon"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-card-info flex flex-column gap-1">
+                  <span
+                    class="video-card-tag font-serif italic text-gold font-xs"
+                  >
+                    (EXECUTIVE INTERVIEW)
+                  </span>
+                  <span
+                    class="video-card-title text-white tracking-wide font-xs fw-300"
+                  >
+                    View the Project Walkthrough with the Founder
+                  </span>
                 </div>
               </div>
             </div>
@@ -143,7 +188,7 @@
           class="relative w-100 py-120 bg-body overflow-hidden"
         >
           <div class="gallery-container">
-            <div class="text-center mb-10 px-24">
+            <div class="text-center mb-10">
               <h2
                 class="font-3xl font-serif text-red fw-400 uppercase leading-none mb-4 animate-split-up"
               >
@@ -241,6 +286,15 @@
                   <img
                     src="Images/gallery/image+7.webp"
                     alt="Palacio Terrace Deck"
+                    class="w-100 h-100 object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Slide 10 -->
+                <div class="swiper-slide">
+                  <img
+                    src="Images/About Image.webp"
+                    alt="Palacio Exterior Day View"
                     class="w-100 h-100 object-cover"
                     loading="lazy"
                   />
@@ -474,7 +528,7 @@
                 <!-- Left: Text -->
                 <div class="kandhari-left">
                   <div class="kandhari-text-block">
-                    <div class="heritage-line-mask">
+                    <div class="heritage-line-mask mb-4">
                       <p
                         class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="1"
@@ -494,10 +548,9 @@
                       class="heritage-para text-white font-sm leading-relaxed fw-300 mt-8"
                       style="opacity: 0.9; max-width: 500px"
                     >
-                      Founded by Bihari P. Kandhari and Hiru B. Kandhari, the B.
-                      Kandhari Group has spent over four decades defining luxury
-                      across Mumbai's most coveted addresses. A name synonymous
-                      with integrity, craftsmanship, and enduring value.
+                      Founded by Bihari P. Kandhari and Hiru B. Kandhari, B.
+                      Kandhari Group has defined Mumbai luxury through
+                      integrity, craftsmanship, and enduring value.
                     </p>
                   </div>
                 </div>
@@ -597,7 +650,7 @@
                 <!-- Left: Text -->
                 <div class="kandhari-left">
                   <div class="kandhari-text-block">
-                    <div class="heritage-line-mask">
+                    <div class="heritage-line-mask mb-4">
                       <p
                         class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="2"
@@ -617,11 +670,9 @@
                       class="heritage-para text-white font-sm leading-relaxed fw-300 mt-8"
                       style="opacity: 0.9; max-width: 500px"
                     >
-                      The visionary force behind iconic addresses like Khushi
-                      Belmondo and over 150+ landmark transactions, Khushi World
-                      brings an unmatched track record of delivering the
-                      extraordinary. Recognised by Forbes India. Trusted by over
-                      20,000 families.
+                      Behind iconic developments like Khushi Belmondo and 150+
+                      landmark transactions, Khushi World is recognised by
+                      Forbes India and trusted by 20,000+ families.
                     </p>
                   </div>
                 </div>
@@ -721,7 +772,7 @@
                 <!-- Left: Text -->
                 <div class="kandhari-left">
                   <div class="kandhari-text-block">
-                    <div class="heritage-line-mask">
+                    <div class="heritage-line-mask mb-4">
                       <p
                         class="heritage-line text-white font-xs tracking-wide uppercase m-0 opacity-90 fw-300"
                         data-heritage-slide="3"
@@ -822,6 +873,56 @@
                   />
                 </svg>
               </a>
+
+              <!-- Location Video Card Wrapper -->
+              <div class="animate-fade-up mt-8">
+                <div
+                  class="video-card gap-3 cursor-pointer"
+                  data-video-src="https://www.youtube.com/embed/i3sUJOmi8r4?autoplay=1"
+                >
+                  <div
+                    class="video-card-thumbnail relative overflow-hidden rounded-8"
+                  >
+                    <img
+                      src="Images/location-video-thumbnail.png"
+                      alt="Bandra West Coastline"
+                      class="w-100 h-100 object-cover"
+                    />
+                    <div
+                      class="video-card-overlay absolute inset-0 flex justify-center items-center"
+                    >
+                      <div
+                        class="play-btn-circle flex justify-center items-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          class="play-icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video-card-info flex flex-column gap-1">
+                    <span
+                      class="video-card-tag font-serif italic text-gold font-xs"
+                    >
+                      (LOCATION WALKTHROUGH)
+                    </span>
+                    <span
+                      class="video-card-title text-white tracking-wide font-xs fw-300"
+                    >
+                      Experience Carter Road & Bandra West
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <!-- Right Column (Map) -->
@@ -1176,9 +1277,7 @@
                   <div class="footer-col-title">(GET IN TOUCH)</div>
                   <div class="footer-col-content">
                     <h3 class="footer-brand">18 HIRAL KHUSHI PALACIO</h3>
-                    <p class="footer-subbrand">
-                      CARTER ROAD, BANDRA WEST
-                    </p>
+                    <p class="footer-subbrand">CARTER ROAD, BANDRA WEST</p>
                   </div>
                 </div>
 
@@ -1500,6 +1599,42 @@
           class="btn-secondary font-sm uppercase no-underline px-6 py-4 tracking-wide transition-all border-white text-white"
           >Call Now</a
         >
+      </div>
+    </div>
+
+    <!-- Video Modal Overlay -->
+    <div
+      id="video-modal"
+      class="video-modal-overlay flex justify-center items-center"
+    >
+      <div class="video-modal-backdrop"></div>
+      <div class="video-modal-container relative">
+        <button
+          id="close-video-modal"
+          class="video-modal-close"
+          aria-label="Close video"
+        >
+          &times;
+        </button>
+        <div class="video-modal-iframe-wrapper">
+          <iframe
+            id="modal-video-iframe"
+            src=""
+            title="Founder Interview Video"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
 

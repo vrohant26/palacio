@@ -46,7 +46,8 @@ if (heroTitle) {
   // Set initial states
   gsap.set(heroSplit.lines, { yPercent: 120 });
   gsap.set(".hero-btn-wrapper .btn-secondary", { yPercent: 120 });
-  gsap.set(".hero-features-wrapper .hero-features", { yPercent: 120 });
+  gsap.set(".hero-features", { y: 20, opacity: 0 });
+  gsap.set(".video-card", { y: 30, opacity: 0 });
   gsap.set(".header", { yPercent: -100 });
 
   // Create timeline for the page entrance animation
@@ -60,12 +61,19 @@ if (heroTitle) {
       ease: "power4.out",
     })
     .to(
-      [
-        ".hero-btn-wrapper .btn-secondary",
-        ".hero-features-wrapper .hero-features",
-      ],
+      ".hero-btn-wrapper .btn-secondary",
       {
         yPercent: 0,
+        duration: 1.0,
+        ease: "power3.out",
+      },
+      "-=0.8",
+    )
+    .to(
+      [".hero-features", ".video-card"],
+      {
+        y: 0,
+        opacity: 1,
         duration: 1.0,
         stagger: 0.15,
         ease: "power3.out",
@@ -110,7 +118,7 @@ const heroTl = gsap.timeline({
 
 heroTl
   .to(".hero-bg", { scale: 1.2, ease: "none" }, 0)
-  .to(".hero-content", { opacity: 0, y: -50, ease: "none" }, 0);
+  .to(".hero-content", { y: -50, ease: "none" }, 0);
 
 // Subtle Parallax for images with data-parallax="true"
 function initParallax() {
@@ -697,7 +705,9 @@ if (document.querySelector(".amenities-swiper")) {
         setTimeout(initParallax, 100);
 
         // Initialize custom pagination bullets (exactly 3 bullets for 3 unique slides)
-        const paginationContainer = document.querySelector(".amenities-pagination");
+        const paginationContainer = document.querySelector(
+          ".amenities-pagination",
+        );
         if (paginationContainer) {
           paginationContainer.innerHTML = `
             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" data-index="0">(1)</span>
@@ -706,12 +716,14 @@ if (document.querySelector(".amenities-swiper")) {
           `;
 
           const self = this;
-          paginationContainer.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
-            bullet.addEventListener("click", function () {
-              const idx = parseInt(this.getAttribute("data-index"));
-              self.slideToLoop(idx);
+          paginationContainer
+            .querySelectorAll(".swiper-pagination-bullet")
+            .forEach((bullet) => {
+              bullet.addEventListener("click", function () {
+                const idx = parseInt(this.getAttribute("data-index"));
+                self.slideToLoop(idx);
+              });
             });
-          });
         }
       },
       slideChange: function () {
@@ -744,7 +756,9 @@ if (document.querySelector(".amenities-swiper")) {
 
         // Update active class on custom pagination bullets
         const realIndex = this.realIndex % 3; // map 0-5 index range to 0-2 bullets
-        const bullets = document.querySelectorAll(".amenities-pagination .swiper-pagination-bullet");
+        const bullets = document.querySelectorAll(
+          ".amenities-pagination .swiper-pagination-bullet",
+        );
         bullets.forEach((bullet, idx) => {
           if (idx === realIndex) {
             bullet.classList.add("swiper-pagination-bullet-active");
@@ -800,5 +814,39 @@ if (document.querySelector(".gallery-swiper")) {
         ScrollTrigger.refresh();
       },
     },
+  });
+}
+
+// Video Modal Open / Close Logic
+const videoCards = document.querySelectorAll(".video-card");
+const videoModal = document.getElementById("video-modal");
+const closeVideoModal = document.getElementById("close-video-modal");
+const modalIframe = document.getElementById("modal-video-iframe");
+
+if (videoCards.length > 0 && videoModal && closeVideoModal && modalIframe) {
+  videoCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const videoSrc = card.getAttribute("data-video-src");
+      modalIframe.src = videoSrc;
+      videoModal.classList.add("active");
+    });
+  });
+
+  const closeModal = () => {
+    videoModal.classList.remove("active");
+    modalIframe.src = "";
+  };
+
+  closeVideoModal.addEventListener("click", closeModal);
+
+  const backdrop = videoModal.querySelector(".video-modal-backdrop");
+  if (backdrop) {
+    backdrop.addEventListener("click", closeModal);
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && videoModal.classList.contains("active")) {
+      closeModal();
+    }
   });
 }
