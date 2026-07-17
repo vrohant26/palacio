@@ -298,6 +298,9 @@ if (heritageSection) {
   );
 
   // Set initial states
+  gsap.set("#heritage-slide-1", { pointerEvents: "auto" });
+  gsap.set("#heritage-slide-2", { pointerEvents: "none" });
+  gsap.set("#heritage-slide-3", { pointerEvents: "none" });
   gsap.set(slide2Lines, { yPercent: 120 });
   gsap.set(slide2ParaLines, { yPercent: 120 });
   if (slide2BgContainer) {
@@ -333,6 +336,8 @@ if (heritageSection) {
     },
     0.1,
   );
+
+  heritageTl.set("#heritage-slide-1", { pointerEvents: "none" }, 0.1);
 
   // Slide 1 paragraph lines exit
   heritageTl.to(
@@ -372,6 +377,8 @@ if (heritageSection) {
     },
     0.4,
   );
+
+  heritageTl.set("#heritage-slide-2", { pointerEvents: "auto" }, 0.4);
 
   // Slide 2 paragraph lines enter
   heritageTl.to(
@@ -419,6 +426,8 @@ if (heritageSection) {
     1.25,
   );
 
+  heritageTl.set("#heritage-slide-2", { pointerEvents: "none" }, 1.25);
+
   // Slide 2 images remain visible underneath Slide 3
 
   // Phase 4: Slide 3 background reveals
@@ -433,6 +442,8 @@ if (heritageSection) {
       1.55,
     );
   }
+
+  heritageTl.set("#heritage-slide-3", { pointerEvents: "auto" }, 1.55);
 
   // Slide 3 text lines enter
   heritageTl.to(
