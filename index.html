@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css?v=1.0" />
+    <link rel="stylesheet" href="style.css?v=1.1" />
   </head>
   <body class="flex flex-column min-h-screen">
     <header
@@ -115,6 +115,7 @@
                 <div class="hero-btn-wrapper overflow-hidden">
                   <a
                     href="#"
+                    id="hero-cta-btn"
                     class="btn-secondary font-xs uppercase no-underline px-6 py-4 tracking-wide transition-all"
                     >REQUEST PRIVATE VIEWING</a
                   >
@@ -1232,7 +1233,7 @@
                   ></textarea>
                 </div>
                 <button
-                  type="button"
+                  type="submit"
                   class="btn-submit mt-4 bg-gold text-dark py-4 rounded-full uppercase font-sm fw-600 tracking-wide border-none cursor-pointer hover-opacity transition-opacity w-100"
                 >
                   REQUEST
@@ -1638,11 +1639,88 @@
       </div>
     </div>
 
+    <!-- Contact Modal Overlay (Popup after 2s) -->
+    <div
+      id="contact-modal"
+      class="video-modal-overlay flex justify-center items-center"
+    >
+      <div class="video-modal-backdrop"></div>
+      <div
+        class="video-modal-container relative bg-dark-red p-8 md:p-10 rounded-20 flex flex-column justify-center items-center"
+        style="
+          max-width: 600px;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+          border: 1px solid rgba(212, 175, 55, 0.2);
+        "
+      >
+        <!-- Close Button -->
+        <button
+          id="close-contact-modal"
+          class="absolute text-gold bg-transparent border-none cursor-pointer p-2 hover-opacity transition-opacity"
+          style="top: 15px; right: 15px; font-size: 1.8rem; line-height: 1"
+          aria-label="Close form"
+        >
+          &times;
+        </button>
+
+        <h3
+          class="text-gold font-serif font-xl italic uppercase text-center mb-2"
+        >
+          REQUEST A<br />PRIVATE VIEWING
+        </h3>
+        <p
+          class="text-white opacity-80 font-sans font-sm text-center mb-8 fw-300"
+        >
+          Our manager will contact you as soon as possible.
+        </p>
+
+        <form class="flex flex-column gap-6 w-100">
+          <div class="input-group relative w-100">
+            <input
+              type="text"
+              class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+              placeholder="NAME"
+              required
+            />
+          </div>
+          <div class="input-group relative w-100">
+            <input
+              type="email"
+              class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+              placeholder="EMAIL"
+              required
+            />
+          </div>
+          <div class="input-group relative w-100">
+            <input
+              type="tel"
+              class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none"
+              placeholder="PHONE"
+              required
+            />
+          </div>
+          <div class="input-group relative w-100 mt-2">
+            <textarea
+              class="footer-input w-100 bg-transparent border-none border-bottom py-2 font-sans font-xs text-white outline-none resize-none"
+              rows="2"
+              placeholder="MESSAGE"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn-submit mt-4 bg-gold text-dark py-4 rounded-full uppercase font-sm fw-600 tracking-wide border-none cursor-pointer hover-opacity transition-opacity w-100"
+          >
+            REQUEST
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js?v=1.0"></script>
+    <script src="script.js?v=1.1"></script>
   </body>
 </html>

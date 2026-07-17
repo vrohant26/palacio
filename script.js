@@ -850,3 +850,53 @@ if (videoCards.length > 0 && videoModal && closeVideoModal && modalIframe) {
     }
   });
 }
+
+// Contact Popup Modal Open / Close Logic
+const contactModal = document.getElementById("contact-modal");
+const closeContactModal = document.getElementById("close-contact-modal");
+
+if (contactModal && closeContactModal) {
+  // Show popup after 2 seconds when page loads
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      contactModal.classList.add("active");
+    }, 3000);
+  });
+
+  // Target the Hero CTA button to open the modal
+  const heroCtaBtn = document.getElementById("hero-cta-btn");
+  if (heroCtaBtn) {
+    heroCtaBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      contactModal.classList.add("active");
+    });
+  }
+
+  const closeContact = () => {
+    contactModal.classList.remove("active");
+  };
+
+  closeContactModal.addEventListener("click", closeContact);
+
+  const contactBackdrop = contactModal.querySelector(".video-modal-backdrop");
+  if (contactBackdrop) {
+    contactBackdrop.addEventListener("click", closeContact);
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && contactModal.classList.contains("active")) {
+      closeContact();
+    }
+  });
+
+  // Handle Form Submission for both forms
+  const contactForms = document.querySelectorAll("form");
+  contactForms.forEach((form) => {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your request has been sent.");
+      closeContact();
+      form.reset();
+    });
+  });
+}
