@@ -425,21 +425,11 @@ nav {
     transform: translateX(-50%);
 }
 
-.logo-title {
-    color: var(--gold);
-    font-size: clamp(1.15rem, 1vw, 1.35rem);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    line-height: 1.1;
-    margin: 0;
-}
-
-.logo-subtitle {
-    font-size: clamp(9px, 1.2vw, 12px);
-    letter-spacing: 0.22em;
-    opacity: 0.75;
-    margin-top: 4px;
+.logo-img {
+    height: clamp(36px, 7.5vw, 120px);
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 
@@ -1118,11 +1108,10 @@ nav {
 
 .kandhari-portrait {
     aspect-ratio: 13/16;
-    max-height: 50vh;
+    max-height: 65vh;
     object-fit: cover;
     position: relative;
     left: -8%;
-
 }
 
 .kandhari-stats {
@@ -1212,7 +1201,7 @@ nav {
     .kandhari-portrait {
         width: 85%;
         max-width: 320px;
-        height: 200px;
+        height: 280px;
         left: 0;
         object-fit: cover;
     }
